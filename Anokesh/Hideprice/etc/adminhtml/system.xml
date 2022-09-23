@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="anokesh" translate="label" sortOrder="1">
+            <label>Anokesh Modules</label>
+        </tab>
+        <section id="anokeshconfiguration" translate="label" sortOrder="1"
+                showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Module Configuration</label>
+            <tab>anokesh</tab>
+            <resource>Anokesh_Hideprice::hideprice_configuration</resource>
+            <group id="hideprice" translate="label" type="text" 
+                sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Hide Price Module</label>
+                <field id="enable" translate="label" type="select" 
+                    sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Hide Price Functionality</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+             </group>
+        </section>
+    </system>
+</config>
